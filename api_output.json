@@ -1,0 +1,45 @@
+{
+  "clean_text": "understanding how dogs perceive humans is crucial for both biologists and animal ethicists one key area of interest in animal behavior and cognition research revolves around how animals adapt to their social environment navigating dynamic relationships within groups and striking a balance between competition and cooperation the evolution of higher cognitive abilities in humans and nonhuman animals has been linked to complex social lives moreover theres a significant gap in knowledge regarding how species interact closely with others of a different kind beyond mere predatorprey dynamics\n\nin urban and domesticated settings particularly with dogs the question becomes more intriguing dogs often considered as forming the closest bonds with humans face the challenge of engaging with a different species possessing distinct anatomy physiology sensory modalities behavior and cognition while cognitive biologists delve into the canine perspective on the humandog relationship animal ethicists find additional importance due to the clear dominance hierarchy present in this bond dogs have been domesticated by humans to serve various purposes leading to ethical considerations beyond welfare\n\nthe ethical discourse around the humandog relationship is complex given the multifaceted roles dogs play in various contexts from being hunting assistants and guardians to companions therapy animals and even social media influencers the ethical implications extend beyond mere welfare concerns companion animals such as dogs blur the line between mutual relationships and exploitation challenging traditional ethical frameworks applied to other animals\n\nthis paper aims to explore the ethical responsibilities arising from the unique characteristics of the humandog relationship by synthesizing insights from dog domestication history and empirical studies on social cognition it seeks to shed light on how dogs perceive humans and how this perception shapes the nature of the relationship the interdisciplinary approach integrates findings from dog social cognition research to critically assess the ethical dimensions of our interactions with dogs\n\nthe methodology involves examining three key areas of dog social cognition to present a comprehensive view acknowledging potential biases or gaps in existing research as discussions unfold the paper emphasizes the need for a more profound ethical evaluation anticipating that future developments in cognition research may reveal additional facets of the humandog relationship ultimately the goal is to inform our treatment of dogs based on a holistic understanding of their cognitive abilities and social dynamics",
+  "urls_score": 0,
+  "emoji_score": 0,
+  "specialChar_score": 0.12698412698412698,
+  "profanity_check": false,
+  "profanity_prob": 0.022195988867005596,
+  "profanity_score": 0.024415587753706156,
+  "text_score": 0.008465608465608466,
+  "textblob_score": {
+    "polarity": 0.0987421383647799,
+    "subjectivity": 0.5084905660377359
+  },
+  "vader_score": { "compound": 0.9945, "neu": 0.854, "pos": 0.146, "neg": 0 },
+  "sentiment_score": 0.0987421383647799,
+  "sentiment_label": "Neutral",
+  "one_shot_score": 0.12315772611848605,
+  "model_score": {
+    "models": [
+      {
+        "model": "Model (1: DebertaModel)",
+        "details": "DAIGTModel(\n (model): DebertaModel(\n (embeddings): DebertaEmbeddings(\n (word_embeddings): Embedding(50265, 1024, padding_idx=0)\n (LayerNorm): DebertaLayerNorm()\n (dropout): StableDropout()\n )\n (encoder): DebertaEncoder(\n (layer): ModuleList(\n (0-23): 24 x DebertaLayer(\n (attention): DebertaAttention(\n (self): DisentangledSelfAttention(\n (in_proj): Linear(in_features=1024, out_features=3072, bias=False)\n (pos_dropout): StableDropout()\n (pos_proj): Linear(in_features=1024, out_features=1024, bias=False)\n (pos_q_proj): Linear(in_features=1024, out_features=1024, bias=True)\n (dropout): StableDropout()\n )\n (output): DebertaSelfOutput(\n (dense): Linear(in_features=1024, out_features=1024, bias=True)\n (LayerNorm): DebertaLayerNorm()\n (dropout): StableDropout()\n )\n )\n (intermediate): DebertaIntermediate(\n (dense): Linear(in_features=1024, out_features=4096, bias=True)\n (intermediate_act_fn): GELUActivation()\n )\n (output): DebertaOutput(\n (dense): Linear(in_features=4096, out_features=1024, bias=True)\n (LayerNorm): DebertaLayerNorm()\n (dropout): StableDropout()\n )\n )\n )\n (rel_embeddings): Embedding(1024, 1024)\n )\n )\n (classifier): Linear(in_features=1024, out_features=1, bias=True)\n)",
+        "execution_type": "Parallel",
+        "score": 0.7243148684501648,
+        "time": 2.2450506687164307,
+        "device": "GPU"
+      },
+      {
+        "model": "Model (2: DebertaV2Model)",
+        "details": "DAIGTModel(\n (model): DebertaV2Model(\n (embeddings): DebertaV2Embeddings(\n (word_embeddings): Embedding(128100, 1024, padding_idx=0)\n (LayerNorm): LayerNorm((1024,), eps=1e-07, elementwise_affine=True)\n (dropout): StableDropout()\n )\n (encoder): DebertaV2Encoder(\n (layer): ModuleList(\n (0-23): 24 x DebertaV2Layer(\n (attention): DebertaV2Attention(\n (self): DisentangledSelfAttention(\n (query_proj): Linear(in_features=1024, out_features=1024, bias=True)\n (key_proj): Linear(in_features=1024, out_features=1024, bias=True)\n (value_proj): Linear(in_features=1024, out_features=1024, bias=True)\n (pos_dropout): StableDropout()\n (dropout): StableDropout()\n )\n (output): DebertaV2SelfOutput(\n (dense): Linear(in_features=1024, out_features=1024, bias=True)\n (LayerNorm): LayerNorm((1024,), eps=1e-07, elementwise_affine=True)\n (dropout): StableDropout()\n )\n )\n (intermediate): DebertaV2Intermediate(\n (dense): Linear(in_features=1024, out_features=4096, bias=True)\n (intermediate_act_fn): GELUActivation()\n )\n (output): DebertaV2Output(\n (dense): Linear(in_features=4096, out_features=1024, bias=True)\n (LayerNorm): LayerNorm((1024,), eps=1e-07, elementwise_affine=True)\n (dropout): StableDropout()\n )\n )\n )\n (rel_embeddings): Embedding(512, 1024)\n (LayerNorm): LayerNorm((1024,), eps=1e-07, elementwise_affine=True)\n )\n )\n (classifier): Linear(in_features=1024, out_features=1, bias=True)\n)",
+        "execution_type": "Parallel",
+        "score": 0.9999850988388062,
+        "time": 2.301032066345215,
+        "device": "GPU"
+      }
+    ],
+    "model_avg": 0.8621499836444855,
+    "execution_time": 2.320037603378296
+  },
+  "score": 0.8621499836444855,
+  "device": "GPU",
+  "parallel": 2,
+  "max_length": 768,
+  "max_memory": 0
+}

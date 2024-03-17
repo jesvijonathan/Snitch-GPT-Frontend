@@ -1,0 +1,32 @@
+.dark {
+  --text-primary: var(--gray-100);
+  --text-secondary: var(--gray-300);
+  --text-tertiary: var(--gray-500);
+  --text-quaternary: var(--gray-700);
+  --border-light: hsla(0, 0%, 100%, 0.1);
+  --border-medium: hsla(0, 0%, 100%, 0.15);
+  --border-heavy: hsla(0, 0%, 100%, 0.2);
+  --border-xheavy: hsla(0, 0%, 100%, 0.25);
+  --main-surface-primary: var(--gray-800);
+  --main-surface-secondary: var(--gray-700);
+  --main-surface-tertiary: var(--gray-600);
+  --sidebar-surface-primary: var(--gray-900);
+  --sidebar-surface-secondary: var(--gray-800);
+  --sidebar-surface-tertiary: var(--gray-700);
+  --link: #7ab7ff;
+  --link-hover: #5e83b3;
+}
+
+body {
+  background-color: #252525;
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-size: 1vw;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+* {
+  scroll-behavior: smooth;
+}
