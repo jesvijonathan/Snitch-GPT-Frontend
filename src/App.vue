@@ -3,14 +3,6 @@ import { ref } from "vue";
 import axios from "axios";
 import { useRoute } from "vue-router";
 
-// import prod from "./components/productcont.vue";
-
-import Header from "./components/header.vue";
-import HeaderBar from "./components/headingbar.vue";
-import Notify from "./components/notify.vue";
-
-import sjson from "./assets/search.json";
-
 if (window.innerWidth < 800) {
   document.body.innerHTML = `<div style='
     height: 100%;

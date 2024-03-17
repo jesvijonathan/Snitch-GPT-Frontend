@@ -2,7 +2,6 @@ import { createApp } from "vue";
 import { watch, nextTick } from "vue";
 
 import JOS from "jos-animation";
-import WaveSurfer from "wavesurfer.js";
 
 import App from "./App.vue";
 import { createRouter, createWebHistory } from "vue-router";

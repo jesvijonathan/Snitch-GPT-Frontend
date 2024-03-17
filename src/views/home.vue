@@ -1,13 +1,15 @@
 <script setup>
 import { ref } from "vue";
-import axios from "axios";
-import { useRoute } from "vue-router";
+// import axios from "axios";
+// import { useRoute } from "vue-router";
 import io from "socket.io-client";
 import { onMounted } from "vue";
 import circleChart from "../components/circleChart.vue";
 
 import polarChart from "../components/polarChart.vue";
-import barChart from "../components/barChart.vue";
+// import barChart from "../components/barChart.vue";
+import { watch } from "vue";
+import doubleBarChart from "../components/doubleBarChart.vue";
 
 var loc = "http://127.0.0.1:5000/";
 
@@ -403,9 +405,6 @@ socket.on("job", function (data) {
 });
 
 let processing = ref(false);
-
-import { watch } from "vue";
-import doubleBarChart from "../components/doubleBarChart.vue";
 
 watch(jobs, (newVal, oldVal) => {
   console.log("jobs changed", newVal);
