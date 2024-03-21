@@ -35,6 +35,11 @@ onMounted(() => {
     }
   }
 
+  // Calculate average
+  const dataValues = Object.values(chartData);
+  const average =
+    dataValues.reduce((acc, val) => acc + val, 0) / dataValues.length;
+
   myChart = new Chart(ctx, {
     type: "line",
     data: {
@@ -61,6 +66,16 @@ onMounted(() => {
           ],
           borderWidth: 1,
           barThickness: (canvas.width / 100) * 10,
+        },
+        // Add average line
+        {
+          type: "line",
+          label: "Average",
+          borderColor: "rgba(75, 192, 192, 0.9)",
+          data: Array(Object.keys(chartData).length).fill(average),
+          fill: false,
+          borderWidth: 2,
+          borderDash: [5, 5], // Optional: dashed line
         },
       ],
     },
